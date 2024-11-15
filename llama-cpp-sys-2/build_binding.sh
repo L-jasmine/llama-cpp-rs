@@ -1,0 +1,1 @@
+bindgen --with-derive-partialeq --allowlist-function "ggml_.*" --allowlist-type "ggml_.*" --allowlist-function "llama_.*" --allowlist-type "llama_.*" --no-prepend-enum-name wrapper.h -- -I llama.cpp/include -I llama.cpp/ggml/include -o binding.rs
